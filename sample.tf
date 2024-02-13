@@ -1,19 +1,18 @@
 
 provider "aws" 
 {
-  region = "ap-south-1"  
+  region = "eu-north-1b"  
 }
 
 resource "aws_instance" "my-instance" 
 {
-  ami           = "ami-03f4878755434977f" 
-  instance_type = "t2.micro"
-  key_name      = "new-key"
-  security_group_id = ["sg-038f5dbc2b42e1eaa"] 
+  ami           = "ami-0014ce3e52359afbd" 
+  instance_type = "t3.micro"
+  key_name      = "stockholm-key"
+  security_group_id = ["sg-07fa648b05aa14fcc"] 
 
   tags = 
   {
     Name = "instance-1"
   }
 }
-bzx-nvzj-anp
