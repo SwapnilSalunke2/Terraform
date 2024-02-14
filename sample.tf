@@ -9,8 +9,7 @@ resource "aws_instance" "my-instance" {
   key_name      = "stockholm-key"
   security_group_id = ["sg-0d53160382ceee98e"] 
 
-  tags = 
-  {
+  tags = {
     Name = "instance-1"
   }
 }
