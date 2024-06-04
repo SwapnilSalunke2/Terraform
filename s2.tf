@@ -8,3 +8,4 @@ resource "aws_instance" "my-instance" {
   key_name      = "stockholm-key"
   security_groups = ["sg-0d53160382ceee98e"]
 }
+
